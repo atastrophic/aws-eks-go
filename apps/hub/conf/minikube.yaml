@@ -1,0 +1,6 @@
+sql:
+  dsn:
+    readwrite: true
+    url: "192.168.65.2"
+    protocol: tcp
+    username: root

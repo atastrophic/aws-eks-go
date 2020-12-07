@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sql
+  namespace: external
+spec: 
+  ports:
+    - protocol: TCP
+      port: 3306
+      targetPort: 3306
+---
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: sql
+  namespace: external
+subsets:
+  - addresses:
+      - ip: 192.168.65.2
+    ports:
+      - port: 3306

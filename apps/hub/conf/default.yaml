@@ -1,0 +1,9 @@
+sql:
+  dsn:
+    readwrite: true
+    url: "localhost"
+    protocol: tcp
+    port: 3306
+    username: root
+    password: password
+    database: todolist

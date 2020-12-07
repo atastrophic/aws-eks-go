@@ -1,0 +1,5 @@
+sql:
+  dsn:
+    readwrite: true
+    protocol: tcp
+    username: root
